@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.easydarwin.easypusher">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-feature
+        android:name="android.hardware.usb.host"
+        android:required="true" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application>
+        <service
+            android:name="org.easydarwin.push.PushScreenService"
+            android:enabled="true" />
+
+        <service
+            android:name="org.easydarwin.push.UVCCameraService"
+            android:enabled="true" />
+
+
+        <service
+            android:name="org.easydarwin.push.MediaStream"
+            android:enabled="true" />
+
+    </application>
+
+</manifest>

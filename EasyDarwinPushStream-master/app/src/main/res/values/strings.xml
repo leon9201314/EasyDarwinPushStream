@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EasyDarwinPushStream</string>
+    <string name="cancel_push_screen">取消屏幕推送</string>
+    <string name="push_screen">屏幕推送</string>
+    <string name="push_url">屏幕推送url</string>
+    <string name="server_error"> 创建服务出错!</string>
+
+</resources>
